@@ -1,0 +1,101 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+h2 title {
+    color: #192D3D;
+    font-weight: 700;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+}
+
+
+.input-nombre, .input-email, .input-telefono, .input-asunto, .input-comentarios {
+    padding: 15px;
+    border: 1px solid #cccccc40;
+    border-radius: 15px;
+    font-size: 1em;
+    background-color: #FAFAFA;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.input-comentarios {
+    resize: none;
+}
+
+.label-politica {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.label-politica a {
+    margin-left: 5px; 
+}
+
+.btn-enviar {
+    background-color: #0A8EB3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    border-radius: 15px;
+    width: auto;
+    justify-self: start;
+}
+
+.btn-enviar:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #0A8EB3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#formMessage {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: green;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .input-nombre, .input-email, .input-telefono, .input-asunto {
+        width: auto;
+    }
+    
+    .title, .input-comentarios, .label-politica, .btn-enviar, #formMessage {
+        grid-column: span 2;
+    }
+
+    .btn-enviar {
+        padding: 10px 15px;
+        font-size: 0.8em;
+    }
+}

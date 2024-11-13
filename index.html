@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="contactForm">
+        <h2 class="title">Contacta con nosotros</h2>
+        <input type="text" name="nombre" class="input-nombre" placeholder="Nombre *" required>
+        <input type="email" name="email" class="input-email" placeholder="Email *" required>
+        <input type="text" name="telefono" class="input-telefono" placeholder="Teléfono">
+        <input type="text" name="asunto" class="input-asunto" placeholder="Asunto">
+        <textarea name="comentarios" class="input-comentarios" placeholder="Comentarios *" required></textarea>
+        <label class="label-politica">
+            <input type="checkbox" name="politica" class="input-politica" required> He leído y acepto la <a href="#">política de privacidad</a>.
+        </label>
+        <button type="submit" class="btn-enviar">Enviar</button>
+        <p id="formMessage"></p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
